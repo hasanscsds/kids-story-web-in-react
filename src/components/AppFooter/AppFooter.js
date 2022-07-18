@@ -3,7 +3,8 @@ import Logo from '../../images/logo.png';
 
 const AppFooter = () => {
    return (
-      <footer className="app__footer">
+      <>
+         <footer className="app__footer">
          <div className="container-fluid">
             <div className="app__footer__top">
                <div className="app__footer__widget">
@@ -20,9 +21,6 @@ const AppFooter = () => {
                            <i className="fa-solid fa-circle-phone"> +7 495 123 34 25</i>
                            <span>dir@kidsstory.life</span>
                         </a>
-                     </li>
-                     <li class="">
-                        <a className="btn" href="./">МЕНЮ САЙТА</a>
                      </li>
                      <li className="">
                         <a className="address__link" href="#location">Москва, ул. Муравская д.38, к.1   ЖК Мир Митино  
@@ -172,7 +170,8 @@ const AppFooter = () => {
                      Copyrights: Kids Story 2021 by khasans__code</a>
             </div>
          </div>
-      </footer>
+         </footer>   
+      </>
    );
 };
 
