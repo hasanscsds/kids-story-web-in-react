@@ -35,32 +35,30 @@ const AppWelcomeBannerSection = () => {
                            <span class="visually-hidden">Следующий</span>
                         </button>
                      </div>
-
-                  </div>
-
-
-                  <form action="" className="banner__form">
-                     <h4 className="form__label">Запишитесь
-                           на персональную
-                           экскурсию</h4>
-                     <p className="form__text">Заполните форму и посмотрите 
-                           детский сад вживую в удобное для 
-                           вас время</p>
-         
-                     <input className='submit__btn' type="text" placeholder="Ваше имя" required/>
-                     <input className='submit__btn' type="number" pattern="(?:\+\([9]{2}[8]\)[0-9]{2}\ [0-9]{3}\-[0-9]{2}\-[0-9]{2})" placeholder="+998 ( _ _ ) - _  _  _ - _  _ - _  _" required/>
-                     <input className='submit__btn' type="gmail" placeholder="Ваш e-mail" required/>
-                     <label class="control control-radio">
-                           <input type="radio" name="radio" />
-                           <div className="control_indicator basic__red"></div>
-                              Я принимаю условия<br/> 
-                              пользовательского соглашения
-                     </label>
-                     <input className="submit__btn" type="button" value="записаться"/>
-                  </form>
-                  </div>
-                  
                </div>
+
+               <div className="banner__form__details">
+                  <h4 className="form__label">Запишитесь
+                        на персональную
+                        экскурсию</h4>
+                     <p className="form__text">Заполните форму и посмотрите 
+                        детский сад вживую в удобное для 
+                        вас время</p>
+                     <form action="" className="banner__form">
+                        <input className='submit__btn' type="text" placeholder="Ваше имя" required/>
+                        <input className='submit__btn' type="number" pattern="(?:\+\([9]{2}[8]\)[0-9]{2}\ [0-9]{3}\-[0-9]{2}\-[0-9]{2})" placeholder="+998 ( _ _ ) - _  _  _ - _  _ - _  _" required/>
+                        <input className='submit__btn' type="gmail" placeholder="Ваш e-mail" required/>
+                        <label class="control control-radio">
+                              <input type="radio" name="radio" />
+                              <div className="control_indicator basic__red"></div>
+                                 Я принимаю условия<br/> 
+                                 пользовательского соглашения
+                        </label>
+                        <input className="submit__btn" type="button" value="записаться"/>
+                     </form>
+                  </div>
+               </div>
+            </div>
          </div>
       {/* <!-- ***** Welcome Area End ***** --> */}
       </>

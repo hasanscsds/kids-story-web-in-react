@@ -1,10 +1,10 @@
 import React from 'react';
 import Logo from '../../images/logo.png';
 
-const AppHeader = () => {
+function AppHeader () {
    return (
       <>
-<header className="app__header">
+      <header className="app__header">
          <div className="container-fluid">
             <div className="app__header__top">
                <a className="address__link" href="#location">Москва, ул. Муравская д.38, к.1   ЖК Мир Митино  <span> М. Пятницкое шоссе</span></a>

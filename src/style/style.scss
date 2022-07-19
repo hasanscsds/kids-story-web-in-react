@@ -123,6 +123,9 @@ a {
    text-decoration: none!important;
    padding: 0;
 }
+strong{
+   font-weight: 700;
+}
 ul, li{
    padding:0;
 }
@@ -524,7 +527,7 @@ ul, li{
                   }
                }
             }
-            .banner__form{
+            .banner__form__details{
                width: 28.47%;
                height: 100%;
                background: $basic_color;
@@ -533,7 +536,6 @@ ul, li{
                right: 0;
                top: 0;
                z-index: 3;
-
                .form__label, .form__text{
                   width: 100%;
                }
@@ -543,8 +545,14 @@ ul, li{
                   font-size: 14px;
                   line-height: 17px;
                }
-               input:last-child{
-                  background: $basic_red;
+               .banner__form{
+                  width: 100%;
+                  input{
+                     margin: 0;
+                     &:last-child{
+                        background: $basic_red;
+                     }
+                  }
                }
             }
          }
@@ -575,7 +583,7 @@ ul, li{
          }
       }
    }
-   .banner__form{
+   .banner__form__details{
       width: 100%;
       border-radius: 20px;
       padding: 2.5em 0;
@@ -587,12 +595,18 @@ ul, li{
       }
       .form__label{
          width: 50%;
+         margin: 0;
       }
       .form__text{
          width: 35%;
-         margin: 1.6875em 0 1.9375em;
+         margin: 27px 0 31px;
       }
-      input{
+      .banner__form{
+         width: 50%;
+         display: flex;
+         flex-wrap: wrap;
+         gap: 6px;
+         input{
             max-width: 308px;
             width: 100%;
             caret-color: $basic_color;
@@ -602,26 +616,25 @@ ul, li{
             line-height: 12px;
             text-align: start;
             background: $white_color;
-
+            display: inline-block;
          &.submit__btn[type=number]::-webkit-inner-spin-button {
             -webkit-appearance: none;
          }
-         &:last-child{
+         &[value]{
             text-align: start;
             font-weight: 700;
             font-size: 16px;
             line-height: 20px;
             padding: 10px;
-            /* identical to box height */
             text-align: center;
             text-transform: uppercase;
+         }
+         &[value="записаться"]{
+            background: $basic_red;
          }
          &:focus, &:focus, &.uneditable-input:focus {
             outline: none;
          }
-      }
-      input:not(:last-child){
-         margin-bottom: 6px;
       }
       .control {
          font-family: arial;
@@ -773,9 +786,121 @@ ul, li{
                }
             }
          }
-      }   
+      } 
+      }
    }
    /*WELCOME BANNER SECTION STYLE END*/
+
+
+   /*FEATURES SECTION STYLE START*/
+   .section__label {
+      margin: 40px 0;
+      color: $basic_color;
+   }
+   .section__text {
+      width: 75%;
+      margin: 1.5em 0;
+      color: $text_color;
+   }
+   .features {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 1em;
+      .features__item {
+         max-width: 418.19px;
+         width: 32%;
+         display: flex;
+         flex-wrap: nowrap;
+         justify-content: start;
+         align-items: center;
+         gap: 1em;
+         .features__img {
+            width: 76px;
+            height: 76px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+               width: 50%;
+            }
+            &:nth-child(1), &:nth-child(5), &:nth-child(9){
+               background: $basic_red;
+            }
+            &:nth-child(3), &:nth-child(4), &:nth-child(8) {
+               background: $basic_yellow!important;
+            }
+         }
+         .features__text{
+            width: 80%;
+            p{
+               margin: 0;
+               font-size: 16px;
+               line-height: 20px;
+               color: $text_color;
+            }
+         }
+      }  
+   }
+   /*FEATURES SECTION STYLE END*/
+
+
+
+
+/*CONTACTS BANNER SECTION STYLE START*/
+   .app__first__banner__form{
+      border-radius: 20px;
+      background: $basic_color;
+      .banner__form__details{
+         background-image: url("../images/icons/Positive_curious_schoolboy_in_casual_wear_looking_at_camera_through 1.png"), url("../images/icons/Group 4.png");
+         background-repeat: no-repeat;
+         background-position: 75% 0, 95% 50%;
+         background-size: auto;
+         input[value="отправить"]{
+            background: $basic_yellow;
+            color: $text_color;
+         }
+      }
+
+   }
+   .app__second__banner__form{
+      border-radius: 20px;
+      background: rgba(255, 246, 209, 1);
+      .banner__form__details{
+         background-image: url("../images/icons/norooot.png"), url("../images/icons/Groupss 4.png");
+         background-repeat: no-repeat;
+         background-position: 75% 0, 95% 50%;
+         background-size: auto;
+         .form__label, .form__text, .control{
+            color: $text_color;
+         }
+         input[value="отправить"]{
+            background: $basic_red;
+            color: $white_color
+         }
+      }
+   }
+   .app__third__banner__form{
+      border-radius: 20px;
+      background: #F3ACC8;
+      .banner__form__details{
+         background-image: url("../images/icons/xxx614600055_48-p-shkola-na-belom-fone-61 1.png"), url("../images/icons/Grouxxxxxxxp 4.png");
+         background-repeat: no-repeat;
+         background-position: 75% 0, 95% 50%;
+         background-size: auto, auto;
+         .form__label, .form__text, .control{
+            color: $text_color;
+         }
+         input[value="отправить"]{
+            background: $basic_yellow;
+            color: $white_color
+         }
+      }
+   }
+/*CONTACTS BANNER SECTION STYLE END*/
+
 
 
    /*FOOTER SECTION STYLE START*/
@@ -1058,97 +1183,148 @@ ul, li{
    /*NAVBAR SECTION STYLE END*/
    
 
+   /*WELCOME BANNER SECTION STYLE START*/
+   .welcome__banner__section{
+      padding: 0;
+      background: transparent;
+      background-image: unset;
+      border-radius: unset;
+      .container-fluid{
+         .welcome__banner{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            .carousel{
+               width: 100%;
+               min-height: 479px!important;
+               background: $basic_yellow;
+               background-image: url("../images/icons/znoroot 2.png"), url("../images/icons/a1614600055_48-p-shkola-na-belom-fone-61\ 1.png"), url("../images/icons/n.png"), url("../images/icons/Group dots1.png"), url("../images/icons/Ver (1).png"), url("../images/icons/zloe.png"), url("../images/icons/Vectovv.png");
+               background-size: auto, auto, 80%, 40%, 50%, 40%, 57%;
+               background-repeat: no-repeat;
+               background-position: bottom left, bottom right, bottom center, center right, bottom left, center right, top right;
+               border-radius: 20px;
+               -webkit-border-radius: 20px;
+               -moz-border-radius: 20px;
+               -ms-border-radius: 20px;
+               -o-border-radius: 20px;
+               .carousel-inner{
+                  .carousel-item{
+                     padding: 18px;
+                     h1{
+                        margin-top: 1.5em;
+                        font-size: 40px;
+                        line-height: 49px;
+                     }
+                     p{
+                        max-width: 60%;
+                        font-size: 14px;
+                        line-height: 17px;
+                     }
+                  }
+               }
+               .owl__navs{
+                  .owl__nav{
+                     margin: 16px;
+                     position: absolute;
+                     top: 0;
+                  }
+               }
+            }
+            .banner__form__details{
+               width: 100%;
+               padding: 32px 18px;
+               position: initial;
+
+               .form__label{
+                  margin: 0;
+                  font-size: 20px;
+                  line-height: 24px;
+               }
+               .form__text{
+                  margin: 11px 0;
+                  font-size: 12px;
+                  line-height: 15px;
+               }
+            }
+         }
+      }
+   }
+   .carousel{
+      width: 100%;
+      .owl__nav{
+         width: 36.77px;
+         height: 36.77px;
+         span{
+            font-size: 1rem;
+         }
+      }
+   }
+   .banner__form__details{
+      .form__label{
+         width: 100%;
+      }
+      .form__text{
+         width: 100%;
+      }
+      .banneer__form{
+         width: 100%;
+         input{
+            max-width: 100%;
+         }
+      }
+   }
+   /*WELCOME BANNER SECTION STYLE END*/
 
 
-/*WELCOME BANNER SECTION STYLE START*/
-.welcome__banner__section{
-   padding: 0;
-   background: transparent;
-   background-image: unset;
-   border-radius: unset;
-   .container-fluid{
-      .welcome__banner{
-         display: flex;
+
+   /*FEATURES SECTION STYLE START*/
+   .section__label {
+      font-size: 24px;
+      line-height: 29px;
+   }
+   .section__text {
+      width: 100%;
+   }
+   .features {
+      gap: 15px;
+      .features__item {
+         width: 45%;
          flex-direction: column;
-         gap: 24px;
-         .carousel{
-            width: 100%;
-            min-height: 479px!important;
-            background: $basic_yellow;
-            background-image: url("../images/icons/znoroot 2.png"), url("../images/icons/a1614600055_48-p-shkola-na-belom-fone-61\ 1.png"), url("../images/icons/n.png"), url("../images/icons/Group dots1.png"), url("../images/icons/Ver (1).png"), url("../images/icons/zloe.png"), url("../images/icons/Vectovv.png");
-            background-size: auto, auto, 80%, 40%, 50%, 40%, 57%;
-            background-repeat: no-repeat;
-            background-position: bottom left, bottom right, bottom center, center right, bottom left, center right, top right;
-            border-radius: 20px;
-            -webkit-border-radius: 20px;
-            -moz-border-radius: 20px;
-            -ms-border-radius: 20px;
-            -o-border-radius: 20px;
-            .carousel-inner{
-               .carousel-item{
-                  padding: 18px;
-                  h1{
-                     margin-top: 1.5em;
-                     font-size: 40px;
-                     line-height: 49px;
-                  }
-                  p{
-                     max-width: 60%;
-                     font-size: 14px;
-                     line-height: 17px;
-                  }
-               }
-            }
-            .owl__navs{
-               .owl__nav{
-                  margin: 16px;
-                  position: absolute;
-                  top: 0;
-               }
-            }
+         gap: 10px;
+         .features_img {
+            width: 56.86px;
+            height: 56.86px;
          }
-         .banner__form{
-            width: 100%;
-            padding: 32px 18px;
-            position: initial;
+         .features__text{
+            p {
+               font-size: 10px;
+               line-height: 12px;
+               text-align: center;
+            } 
+         }
+      }
+   }
+   /*FEATURES SECTION STYLE END*/
 
-            .form__label{
-               margin: 0;
-               font-size: 20px;
-               line-height: 24px;
-            }
-            .form__text{
-               margin: 11px 0;
-               font-size: 12px;
-               line-height: 15px;
-            }
-         }
-      }
+
+
+   /*CONTACTS BANNER SECTION STYLE START*/
+   .app__first__banner__form{
+      background-position: bottom center, 50% 200%;
+      background-size: 70%, 160%;
    }
-}
-.carousel{
-   width: 100%;
-   .owl__nav{
-		width: 36.77px;
-		height: 36.77px;
-      span{
-         font-size: 1rem;
-      }
+
+   .app__second__banner__form{
+      background-image: url("../images/icons/norooot.png"), url("../images/icons/Groupss 4.png");
+      background-position: bottom center, bottom center;
+      background-size: 90%, auto;
    }
-}
-.banner__form{
-   width: 100%;
-   .form__label{
-      width: 50%;
+
+   .app__third__banner__form{
+      background-position: bottom center, bottom center;
+      background-size: 90%, auto;
    }
-   .form__text{
-      width: 35%;
-   }
-   input{
-      max-width: 100%;
-   }
-}
-/*WELCOME BANNER SECTION STYLE END*/
+ /*CONTACTS BANNER SECTION STYLE END*/
 
 
 
