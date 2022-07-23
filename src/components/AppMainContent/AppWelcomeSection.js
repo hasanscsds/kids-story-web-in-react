@@ -1,38 +1,38 @@
 import React from 'react';
 
-const AppWelcomeBannerSection = () => {
+function AppWelcomeBannerSection () {
    return (
       <>
             {/* <!-- ***** Welcome Area Start ***** --> */}
             <div className="welcome__banner__section section" id="banner select-program">
                <div className="container-fluid">
                   <div className="welcome__banner">
-                  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                     <div class="carousel-inner">
-                        <div class="carousel-item active">
+                  <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
+                     <div className="carousel-inner">
+                        <div className="carousel-item active">
                            <h1>Kidsstory</h1>
                            <p>Английский детский 
                               сад и клуб</p>
                         </div>
-                        <div class="carousel-item">
+                        <div className="carousel-item">
                            <h1>Kidsstory</h1>
                            <p>Английский детский 
                               сад и клуб</p>
                         </div>
-                        <div class="carousel-item">
+                        <div className="carousel-item">
                            <h1>Kidsstory</h1>
                            <p>Английский детский 
                               сад и клуб</p>
                         </div>
                      </div>
                      <div className="owl__navs">
-                        <button class="owl__nav carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                           <span class="carousel__left" aria-hidden="true"><i class="fa-solid fa-angle-left"></i></span>
-                           <span class="visually-hidden">Предыдущий</span>
+                        <button className="owl__nav carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                           <span className="carousel__left" aria-hidden="true"><i className="fa-solid fa-angle-left"></i></span>
+                           <span className="visually-hidden">Предыдущий</span>
                         </button>
-                        <button class="owl__nav carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                           <span class="carousel__right" aria-hidden="true"><i class="fa-solid fa-angle-right"></i></span>
-                           <span class="visually-hidden">Следующий</span>
+                        <button className="owl__nav carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                           <span className="carousel__right" aria-hidden="true"><i className="fa-solid fa-angle-right"></i></span>
+                           <span className="visually-hidden">Следующий</span>
                         </button>
                      </div>
                </div>

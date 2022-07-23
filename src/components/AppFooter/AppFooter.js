@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../../images/logo.png';
 
-const AppFooter = () => {
+function AppFooter ()  {
    return (
       <>
          <footer className="app__footer">

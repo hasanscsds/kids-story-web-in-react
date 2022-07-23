@@ -2,63 +2,72 @@
    {
       "id":1,
       "title": "",
-      "img":"../public/images/icons/feat9.png",
+      "img":"./images/Mask groupw.png",
+      "video": "./videos/Lionel Messi vs Physics.mp4",
       "dataKey": "Часы работы:",
       "data": "с 7:00 до 19:00"
    },
    {
-      "id":4,
+      "id": 2,
       "title": "",
-      "img":"../public/images/icons/feat5.png",
+      "img":"./images/Mask groupw.png",
+      "video": "./videos/Lionel Messi vs Physics.mp4",
       "dataKey": "Группы:",
       "data": "до 15 человек"
    },
    {
-      "id":7,
+      "id":3,
       "title": "",
-      "img":"../public/images/icons/feat7.png",
+      "img":"./images/Mask groupw.png",
+      "video": "./videos/Lionel Messi vs Physics.mp4",
       "dataKey": "Площадь для прогулок:",
       "data": "собственная оборудованная территория для прогулок"
    },
    {
-      "id":2,
+      "id":4,
       "title": "",
-      "img":"../public/images/icons/feat8.png",
+      "img":"./images/Mask groupw.png",
+      "video": "./videos/Lionel Messi vs Physics.mp4",
       "dataKey": "Видеонаблюдение:",
       "data": "онлайн"
    },
    {
       "id":5,
       "title": "",
-      "img":"../public/images/icons/feat2.png",
+      "img":"./images/Mask groupw.png",
+      "video": "./videos/Lionel Messi vs Physics.mp4",
       "dataKey": "Англоязычная среда:",
       "data": "билингвал / экспат"
    },
    {
-      "id":8,
+      "id":6,
       "title": "",
-      "img":"../public/images/icons/feat3.png",
+      "img":"./images/Mask groupw.png",
+      "video": "./videos/Lionel Messi vs Physics.mp4",
       "dataKey": "Возраст детей:",
       "data": "с 1,5 до 7 лет"
    },
    {
-      "id":3,
+      "id":7,
       "title": "",
-      "img":"../public/images/icons/feat4.png",
+      "img":"./images/Mask groupw.png",
+      "video": "./videos/Lionel Messi vs Physics.mp4",
       "dataKey": "Утренний фильтр медработником:",
       "data": "ежедневно"
    },
    {
-      "id":6,
+      "id":8,
       "title": "",
-      "img":"../public/images/icons/feat6.png",
+      "img":"./images/Mask groupw.png",
+      "video": "./videos/Lionel Messi vs Physics.mp4",
       "dataKey": "Помещение:",
       "data": "800 кв.м"
    },
    {
-      "id":9,
+      "id": 9,
       "title": "",
-      "img":"../public/images/icons/features1.png",
+      "img":"./images/Mask groupw.png",
+      "video": "./videos/Lionel Messi vs Physics.mp4",
       "dataKey": "Питание:",
       "data": "5-разовое, с учетом индивидуальных особенностей ребенка"
    }

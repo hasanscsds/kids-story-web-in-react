@@ -1,0 +1,68 @@
+[
+   {
+      "id": 1,
+      "servicesBg": "",
+      "servicesIcon": "./images/icons/extra-services-icons/Vector (1).png",
+      "servicesLabel": "Йога"
+   },
+   {
+      "id":2,
+      "servicesBg": "",
+      "servicesIcon": "./images/icons/extra-services-icons/Vector (2).png",
+      "servicesLabel": "Монтессори группа с уникальным древесинным оборудованием"
+   },
+   {
+      "id":3,
+      "servicesBg": "",
+      "servicesIcon": "./images/icons/extra-services-icons/Vector (3).png",
+      "servicesLabel": "Гольф для малышей"
+   },
+   {
+      "id":4,
+      "servicesBg": "",
+      "servicesIcon": "./images/icons/extra-services-icons/Vector (4).png",
+      "servicesLabel": "Занятия с беговелами"
+   },
+   {
+      "id":5,
+      "servicesBg": "",
+      "servicesIcon": "./images/icons/extra-services-icons/Vector (5).png",
+      "servicesLabel": "Легостроение и конструирование"
+   },
+   {
+      "id":6,
+      "servicesBg": "",
+      "servicesIcon": "./images/icons/extra-services-icons/Vector (6).png",
+      "servicesLabel": "Тестопластика и глинопластика"
+   },
+   {
+      "id":7,
+      "servicesBg": "",
+      "servicesIcon": "./images/icons/extra-services-icons/Group 23.png",
+      "servicesLabel": "Риторика и ораторское мастерство"
+   },
+   {
+      "id":8,
+      "servicesBg": "",
+      "servicesIcon": "./images/icons/extra-services-icons/Vector (7).png",
+      "servicesLabel": "Занятия по скалолазанию"
+   },
+   {
+      "id":9,
+      "servicesBg": "",
+      "servicesIcon": "./images/icons/extra-services-icons/Vector (8).png",
+      "servicesLabel": "Театрализация на английском языке"
+   },
+   {
+      "id":10,
+      "servicesBg": "",
+      "servicesIcon": "./images/icons/extra-services-icons/Vector (9).png",
+      "servicesLabel": "Кулинария и этикет сервисного стола"
+   },
+   {
+      "id":11, 
+      "servicesBg": "",
+      "servicesIcon": "./images/icons/extra-services-icons/Vector (10).png",
+      "servicesLabel": "Песочная терапия. Работа на интерактивных столах и досках"
+   }
+]

@@ -1,10 +1,10 @@
 import React from 'react';
 
-const preloader = () => {
+function preloader (){
    return (
          //   ***** Preloader Start ***** 
          <div id="preloader">
-         <div class="jumper">
+         <div className="jumper">
                <div></div>
                <div></div>
                <div></div>

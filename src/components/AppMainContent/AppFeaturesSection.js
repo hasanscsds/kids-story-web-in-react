@@ -1,5 +1,5 @@
 import React from 'react';
-import Features from '../../data.json'
+import Features from '../../FeaturesData.json'
 
 function AppFeaturesSection () {
    return (
@@ -10,9 +10,9 @@ function AppFeaturesSection () {
                <div className="features">
                   {
                      Features.map((item, index)=>
-                     <div class="features__item" key={item.id}>
+                     <div className="features__item" key={item.id}>
                         <span className="features__img">
-                           <img src={item.img} alt="img"/>
+                           <img src={item.featuresIcon} alt="img"/>
                         </span>
                         <span  className='features__text'>
                            <p><strong>{item.dataKey} </strong> {item.data}</p>
